@@ -39,21 +39,33 @@ function setup() {
 
 function draw() {
   
-  if(keyPressed === "r"){
-
+  if(timeState === 0){
+    background(   
+      colorOfMorningSky[morningColorInArray][0],
+      colorOfMorningSky[morningColorInArray][1],
+      colorOfMorningSky[morningColorInArray][2]);
   }
-  background(   
-    colorOfMorningSky[morningColorInArray][0],
-    colorOfMorningSky[morningColorInArray][1],
-    colorOfMorningSky[morningColorInArray][2]);
+  if(timeState === 1){
+    background(15,15,30);
+  }
   fill(255, 204, 102);
   circle(mouseX,mouseY,50);
+  fill(0,0,0);
+  circle(mouseX-10,mouseY-5,10);
+  fill(0,0,0);
+  circle(mouseX+10,mouseY-5,10);
+  fill(255,255,255);
+  circle(mouseX-7,mouseY-7,5);
+  fill(255,255,255);
+  circle(mouseX+7,mouseY-7,5);
   fill(0,0,0);
   rect(0,windowHeight-windowHeight/15,windowWidth,60);
   fill(0,0,0);
   rect(40,windowHeight/2,70,700);
   fill(0,0,0);
   rect(120,100,90,1200);
+  fill(0,0,0);
+  rect(120,100,90,2800);
 }
 
 //fill(34, 139, 34);
