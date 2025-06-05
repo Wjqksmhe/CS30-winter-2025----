@@ -1,0 +1,106 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+  }
+  
+  
+  .screen {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  
+  .screen:not(.hidden) {
+    display: block;
+  }
+  
+  
+  #start-top {
+   
+  }
+  
+  
+  #start-options {
+   
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+  }
+  
+  
+  #start-options div {
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid white;
+    cursor: pointer;
+  }
+  
+  
+  #bookmark-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: #ddd;
+  }
+  
+  
+  #dialogue-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80vw;
+    height: 25vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  
+  #dialogue-text {
+    flex: 5;
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  
+  #dialogue-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  
+  
+  #dialogue-controls button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 0.9em;
+  }
+  
+  
+  #settings-placeholder {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  
+  
+  

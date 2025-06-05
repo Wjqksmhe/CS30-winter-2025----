@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DND</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 开始界面 -->
+  <div id="start-screen" class="screen hidden">
+    <div id="start-top"></div>
+    <div id="start-options">
+      <div id="option-start">开始</div>
+      <div id="option-continue">继续</div>
+      <div id="option-language">语言:中文</div>
+      <div id="option-settings">设置</div>
+    </div>
+  </div>
+
+
+  <!-- 游戏界面 -->
+  <div id="game-screen" class="screen">
+    <div id="bookmark-panel"></div>
+    <div id="dialogue-box">
+      <div id="dialogue-text">这是对话内容。</div>
+      <div id="dialogue-controls">
+        <button id="btn-status">状态</button>
+        <button id="btn-action">行动</button>
+        <button id="btn-interact">交互</button>
+        <button id="btn-settings">设置</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 设置界面 -->
+  <div id="settings-screen" class="screen hidden">
+    <p id="settings-placeholder">设置界面（占位）</p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
